@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <title>myBirthdayApp</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="top">
+        <div class="add">
+            <div class="add__container">
+                <input type="text" class="add__name" placeholder="Add your friend's name">
+                <input type="date" class="add__date" placeholder="Add a birth date" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+                <button class="add__btn"><i class="ion-ios-checkmark-outline"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="container clearfix">
+            <div class="friends">
+                <h2 class="friends__title">Friends ' birthdays</h2>
+                <div class="friends__list">
+                    <div class="item clearfix" id="friends-0">
+                        <div class="item__name">John Doe</div>
+                        <div class="right clearfix">
+                            <div class="item__date">16.07.1981</div>
+                            <div class="item__delete">
+                                <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item clearfix" id="friends-1">
+                        <div class="item__name">Alex Smith</div>
+                        <div class="right clearfix">
+                            <div class="item__date">11.12.1988</div>
+                            <div class="item__delete">
+                                <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
